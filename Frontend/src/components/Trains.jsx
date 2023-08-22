@@ -1,11 +1,9 @@
-import { trainDetails } from "../trainDetails";
 import { Link } from "react-router-dom";
 
-export default function Trains() {
-    console.log(trainDetails);
+export default function Trains({ trainData }) {
     return (
         <ul role="list" className="divide-y divide-gray-100">
-            {trainDetails.map((train) => (
+            {trainData.map((train) => (
                 <li
                     key={train.trainNumber}
                     className="flex justify-between gap-x-6 py-5"
