@@ -7,12 +7,12 @@ const Container = styled.div`
     padding: 60px;
 `;
 
-const Home = () => {
+const Home = ({ data }) => {
     return (
         <>
             <Navbar />
             <Container>
-                <Trains />
+                <Trains trainData={data} />
             </Container>
         </>
     );
