@@ -1,13 +1,8 @@
-import { PaperClipIcon } from "@heroicons/react/20/solid";
-import { trainDetails } from "../trainDetails";
-
-export default function TrainDetails({ trainNumber }) {
-    console.log(trainNumber);
+export default function TrainDetails({ trainNumber, trainDetails }) {
     const filteredTrain = trainDetails.find(
         (train) => train.trainNumber === trainNumber.trainNumber
     );
 
-    console.log(filteredTrain);
     return (
         <div>
             <div className="px-4 sm:px-0">
@@ -38,6 +33,14 @@ export default function TrainDetails({ trainNumber }) {
                             {filteredTrain.departureTime.Seconds
                                 ? filteredTrain.departureTime.Seconds
                                 : "00"}
+                        </dd>
+                    </div>
+                    <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                        <dt className="text-sm font-medium leading-6 text-gray-900">
+                            Delay
+                        </dt>
+                        <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                            {filteredTrain.delayedBy}
                         </dd>
                     </div>
                     <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
