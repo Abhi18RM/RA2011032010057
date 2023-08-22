@@ -8,14 +8,13 @@ const Container = styled.div`
     padding: 60px;
 `;
 
-const TrainStatus = () => {
+const TrainStatus = ({ data }) => {
     const trainNumber = useParams();
-    console.log(trainNumber);
     return (
         <>
             <Navbar />
             <Container>
-                <TrainDetails trainNumber={trainNumber} />
+                <TrainDetails trainNumber={trainNumber} trainDetails={data} />
             </Container>
         </>
     );
