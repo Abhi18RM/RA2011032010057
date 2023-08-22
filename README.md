@@ -4,6 +4,6 @@
 
 <h2>After Clicking on Any Specific Train you get the whole train details</h2>
 
-<img width="1440" alt="Screenshot 2023-08-22 at 9 27 46 PM" src="https://github.com/Abhi18RM/RA2011032010057/assets/101940348/afd86c44-1de2-4f96-936e-c2809b5e467b">
+<img width="1440" alt="Screenshot 2023-08-23 at 12 42 48 AM" src="https://github.com/Abhi18RM/RA2011032010057/assets/101940348/31f44de4-0cac-4818-bb4e-09e537b40d58">
 
 <h2>Tech Stack: React and Tailwind CSS</h2>
